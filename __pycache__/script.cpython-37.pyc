@@ -1,0 +1,11 @@
+B
+
+	Z\_�@sDddlmZmZmZddlmZddd�Zdd�Zdd	�Ze�d
+S)�)�get_distance�format_price�SHIPPING_PRICES)�	run_tests�GroundcCs.|\}}|\}}t||||�}t|t|�S)N)rrr)�from_coords�	to_coords�
+shipping_type�from_lat�	from_long�to_lat�to_long�distance�r�E/Users/tim/Codecademy/workspaces/function-args-nile/project/script.py�calculate_shipping_costsrcGsTd}d}xB|D]:}|j|}|j|}|dkr8|}|}q||kr|}|}qW||fS)N)�speed�salary)r�drivers�cheapest_driver�cheapest_driver_price�driver�driver_time�price_for_driverrrr�calculate_driver_costs
+
+
+rcKs4d}x*|��D]\}}|j|jj}||7}qW|S)Nr)�items�costr)�trips�total_money_made�trip_id�trip�trip_revenuerrr�calculate_money_mades
+r"N)r)	�nilerrr�testrrrr"rrrr�<module>s
+
+

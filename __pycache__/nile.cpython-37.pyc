@@ -1,0 +1,6 @@
+B
+
+�Z\��@s8ddlmZmZmZmZdd�Zdddd�Zdd	�Zd
+S)�)�sin�cos�atan2�sqrtc	Csf||}||}t|d�dt|�t|�t|d�d}dtt|�td|��}||}|S)N��)rrrr)	�from_lat�	from_long�to_lat�to_longZdlonZdlat�a�c�distance�r�C/Users/tim/Codecademy/workspaces/function-args-nile/project/nile.py�get_distances0rrg�������?gffffff@)�GroundZPriorityZ	OvernightcCs
+d�|�S)Nz${0:.2f})�format)Zpricerrr�format_pricesrN)Zmathrrrrr�SHIPPING_PRICESrrrrr�<module>s
+	

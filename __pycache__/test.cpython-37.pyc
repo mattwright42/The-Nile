@@ -1,0 +1,31 @@
+B
+
+�\\��@sldd�Zdd�ZGdd�d�Zedd�Zedd	�Zd
+d�ZGdd
+�d
+�Zeded�Zeded�Zdd�Z	dS)cCs:|jdkrt|�|jdkr$t|�|jdkr6t|�dS)N�calculate_shipping_cost�calculate_driver_cost�calculate_money_made)�__name__�
+test_shipping�test_driver�
+test_money)�fn�r	�C/Users/tim/Codecademy/workspaces/function-args-nile/project/test.py�
+test_functions
+
+
+rcCsly|dd�}Wntk
+r*td�dSXt|�tk	rDtd�dS|dkr`td�|d��dStd�dS)N)�r)�r
+zLcalculate_shipping_cost() did not provide default argument for shipping_typez?calculate_shipping_cost() did not format the result in a stringz$0.45zJcalculate_shipping_cost((0, 0), (1, 1)) returned {}. Expected result is {}u*✅ calculate_shipping_cost() passes tests)�	TypeError�print�type�str�format)�fZcostsr	r	r
+r	src@seZdZdd�Zdd�ZdS)�DrivercCs||_||_dS)N)�speed�salary)�selfrrr	r	r
+�__init__szDriver.__init__cCsd�|j|j�S)NzNile Driver speed {} salary {})rrr)rr	r	r
+�__repr__szDriver.__repr__N)r�
+__module__�__qualname__rrr	r	r	r
+rsr��
+��cCs�y|dtt�\}}Wntk
+r0td�dSXt|�tk	rJtd�dS|dkrftd�|d��dS|tk	rztd�dStd�dS)N�Pz@calculate_driver_cost() doesn't expect multiple driver argumentsz-calculate_driver_cost() did not return driveri@zVcalculate_driver_cost() did not provide correct final price (expected {}, received {})z>calculate_driver_cost() did not provide least expensive driveru(✅ calculate_driver_cost() passes tests)�driver1�driver2rrrrr)r�price�driverr	r	r
+r"src@seZdZdd�ZdS)�TripcCs||_||_||_dS)N)�costr$)rr&r$Zdriver_costr	r	r
+r4sz
+Trip.__init__N)rrrrr	r	r	r
+r%3sr%���i,�(cCsry|ttd�}Wntk
+r,td�dSXt|�ttfkrJtd�dS|dkrftd�|d��dStd�dS)N)ZUEXODIZDEFZXIEzEcalculate_money_made() doesn't expect multiple trip keyword argumentsz/calculate_driver_cost() did not return a numberi�zVcalculate_driver_cost() did not provide correct final price (expected {}, received {})u'✅ calculate_money_made() passes tests)�trip1�trip2rrr�int�floatr)rZmoneyr	r	r
+r<srN)
+rrrr!r"rr%r*r+rr	r	r	r
+�<module>s
+
+

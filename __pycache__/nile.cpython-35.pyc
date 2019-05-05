@@ -1,0 +1,16 @@
+
+
+H�\\��@sVddlmZmZmZmZdd�Zdddddd	iZd
+d�ZdS)
+�)�sin�cos�atan2�sqrtc	Cs||}||}t|d�dt|�t|�t|d�d}dtt|�td|��}||}|S)N��)rrrr)	Zfrom_latZ	from_longZto_latZto_longZdlonZdlat�a�cZdistance�r
+�1/home/ccuser/workspace/function-args-nile/nile.py�get_distances
+
+:#
+rZGroundrZPriorityg�������?Z	Overnightgffffff@cCs
+dj|�S)Nz${0:.2f})�format)Zpricer
+r
+r�format_pricesrN)Zmathrrrrr�SHIPPING_PRICESrr
+r
+r
+r�<module>s
+"	
