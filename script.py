@@ -4,6 +4,10 @@ from test import test_function
 # Define calculate_shipping_cost() here:
 
 
+def calculate_shipping_cost(self, from_coords, to_coords, shipping_type):
+    pass
+
+
 # Test the function by calling
 # test_function(calculate_shipping_cost)
 
